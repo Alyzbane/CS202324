@@ -68,4 +68,4 @@ while True:
             open_link(link, code, weekday)
             break
 
-    time.sleep(60) # Wait for 1 minute before checking again
+    time.sleep(60) # Wait a minute before checking again
