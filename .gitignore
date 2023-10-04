@@ -1,0 +1,10 @@
+git
+.vs
+bin
+obj
+packages
+*.suo
+*.user
+*.dbmdl
+*.edmx
+*.xproj
