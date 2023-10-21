@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <LinearLayout
+         android:id="@+id/mainLL"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/txt_view"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingLeft="@dimen/activity_vertical_margin"
+             android:text="Gender" />
+
+         <EditText
+             android:id="@+id/edit_text"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:hint="Enter Name"
+             android:inputType="text"
+             android:padding="@dimen/activity_horizontal_margin"
+             android:paddingTop="@dimen/activity_horizontal_margin" >
+
+             <requestFocus />
+         </EditText>
+
+         // ================== Buttons =======================
+         <RadioGroup
+             android:id="@+id/rg_gender"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+         <RadioButton
+             android:id="@+id/rb_male"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Male" />
+
+         <RadioButton
+             android:id="@+id/rb_fem"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Female" />
+         </RadioGroup>
+
+         <LinearLayout
+             android:id="@+id/buttonLL"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" >
+
+             <Button
+                 android:id="@+id/btn_close"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Close" />
+
+             <Button
+                 android:id="@+id/btn_clear"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Clear" />
+
+             <Button
+                 android:id="@+id/btn_display"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Display" />
+
+         </LinearLayout>
+
+     </LinearLayout>
+
+</RelativeLayout>
